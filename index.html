@@ -5,6 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PDF Color Inverter</title>
     
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Invert colors of any PDF file locally and quickly without losing quality. Drag and drop your PDF to get started!">
+    <meta name="keywords" content="PDF color inverter, invert PDF colors, PDF tools, local PDF processing, fast PDF editing">
+    <meta name="author" content="PDF Color Inverter Team">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="PDF Color Inverter - Fast and Local PDF Color Editing">
+    <meta property="og:description" content="Invert colors of any PDF file locally and quickly without losing quality. Drag and drop your PDF to get started!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sujal-s-patil.github.io/invert-pdf-color">
+    <meta property="og:image" content="https://sujal-s-patil.github.io/invert-pdf-color/assets/file-pdf.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="PDF Color Inverter - Fast and Local PDF Color Editing">
+    <meta name="twitter:description" content="Invert colors of any PDF file locally and quickly without losing quality. Drag and drop your PDF to get started!">
+    <meta name="twitter:image" content="https://sujal-s-patil.github.io/invert-pdf-color/assets/file-pdf.png">
+
     <!-- 1. Tailwind CSS for styling -->
     <script src="https://cdn.tailwindcss.com"></script>
     
@@ -231,7 +246,6 @@
          * @param {Uint8Array} bytes - The file content as a byte array.
          */
         function addFileToOutputList(name, bytes) {
-            download(bytes, name, 'application/pdf');
             // Create the list item container
             const itemDiv = document.createElement('div');
             itemDiv.className = 'bg-gray-800 rounded-lg p-4 flex items-center justify-between shadow-md transition-all animate-fade-in';
